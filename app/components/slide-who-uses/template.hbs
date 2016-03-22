@@ -1,0 +1,33 @@
+<div class="flex-center padded" style="width: 100%">
+  {{#liquid-spacer growDuration=250 class="max-width"}}
+    <h2>Who uses e-c?</h2>
+
+    {{#hidden-at-first index=0}}
+      <h4>Lots of people</h4>
+    {{/hidden-at-first}}
+
+    {{#hidden-at-first index=1}}
+      <h4>
+        <img src="http://emberobserver.com/badges/ember-concurrency.svg" alt="" height="50" />
+      </h4>
+    {{/hidden-at-first}}
+
+    {{#hidden-at-first index=2}}
+      <h4>
+        <em>
+          "There is a whole category of problems in Discourse (and other Ember apps!) that ember-concurrency solves elegantly"
+        </em>
+      </h4>
+    {{/hidden-at-first}}
+
+    {{#hidden-at-first index=3}}
+      <h4>
+        <em>
+          "I didn’t even realize how big a problem I had until I saw [ember-concurrency]"
+        </em>
+      </h4>
+    {{/hidden-at-first}}
+
+  {{/liquid-spacer}}
+</div>
+

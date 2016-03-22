@@ -1,0 +1,21 @@
+<div class="padded">
+  <h3>Basic Async Button: Loading UI</h3>
+
+  <div class="row">
+    <div class="six columns">
+      {{code-snippet name="exhibit-b.js"}}
+    </div>
+    <div class="six columns">
+      {{code-snippet name="exhibit-b.hbs"}}
+
+      {{! BEGIN-SNIPPET exhibit-b }}
+      <button onclick={{action 'refreshData'}}
+          class={{if isIdle 'clickable'}}>
+        Refresh
+      </button>
+      <p>Data: {{data.value}}</p>
+      {{! END-SNIPPET }}
+    </div>
+  </div>
+</div>
+

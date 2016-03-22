@@ -39,9 +39,9 @@ export default Ember.Component.extend({
   }),
 
   click: function(ev) {
-    if (Ember.$(ev.target).closest('a,button,.ember-power-select').length === 0) {
-      this.sendAction('advance');
-    }
+    //if (Ember.$(ev.target).closest('a,button,.ember-power-select').length === 0) {
+      //this.sendAction('advance');
+    //}
   },
 });
 
