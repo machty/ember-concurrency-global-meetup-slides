@@ -1,0 +1,21 @@
+<div class="padded">
+  <h3>Basic Async Button: Prevent Concurrent Loading</h3>
+
+  <div class="row">
+    <div class="six columns">
+      {{code-snippet name="exhibit-c.js" class="large-example"}}
+    </div>
+    <div class="six columns">
+      {{code-snippet name="exhibit-c.hbs"}}
+
+      {{! BEGIN-SNIPPET exhibit-c }}
+      <button onclick={{action 'refreshData'}}
+          class={{if isIdle 'clickable'}}>
+        Refresh
+      </button>
+      <p>Data: {{data.value}}</p>
+      {{! END-SNIPPET }}
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,57 @@
+<div class="padded">
+  <h2>We need Structured Concurrency</h2>
+
+  <h5>Unstructured</h5>
+
+  <div class="row">
+    <div class="six columns">
+      <div class="lifecycle-outer">
+        <div class="lifecycle-inner">
+          Route is active
+        </div>
+        <div class="lifecycle-outer">
+          <div class="lifecycle-inner">
+            Component is Rendered
+          </div>
+          <div class="lifecycle-outer lifecycle-exceed">
+            <div class="lifecycle-inner">
+              Load Data
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six columns">
+      &nbsp;
+    </div>
+  </div>
+
+  <br />
+
+  <h5>Structured</h5>
+
+  <div class="row">
+    <div class="six columns">
+      <div class="lifecycle-outer">
+        <div class="lifecycle-inner">
+          Route is active
+        </div>
+        <div class="lifecycle-outer">
+          <div class="lifecycle-inner">
+            Component is Rendered
+          </div>
+          <div class="lifecycle-outer">
+            <div class="lifecycle-inner">
+              Load Data (and then canceled)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six columns">
+      &nbsp;
+    </div>
+  </div>
+
+</div>
+

@@ -1,0 +1,21 @@
+<div class="padded">
+  <h3>Basic Async Button: with ember-concurrency</h3>
+
+  <div class="row">
+    <div class="six columns">
+      {{code-snippet name="exhibit-e.js" class="large-example"}}
+    </div>
+    <div class="six columns">
+      {{code-snippet name="exhibit-e.hbs" class="large-example"}}
+
+      {{! BEGIN-SNIPPET exhibit-e }}
+      <button onclick={{perform refreshData}}
+          class={{if refreshData.isIdle 'clickable'}}>
+        Refresh
+      </button>
+      <p>Data: {{data.value}}</p>
+      {{! END-SNIPPET }}
+    </div>
+  </div>
+</div>
+
