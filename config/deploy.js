@@ -21,6 +21,11 @@ module.exports = function(deployTarget) {
     // configure other plugins for production deploy target here
   }
 
+  ENV.git = {
+    repo: 'git@github.com:machty/ember-concurrency-global-meetup-slides.git',
+    worktreePath: '/tmp/deploy-ec-prezo-global'
+  };
+
   // Note: if you need to build some configuration asynchronously, you can return
   // a promise that resolves with the ENV object instead of returning the
   // ENV object synchronously.
